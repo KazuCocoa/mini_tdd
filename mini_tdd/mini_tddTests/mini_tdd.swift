@@ -3,41 +3,45 @@ enum CloseRangeError: ErrorType {
 }
 
 struct ClosedRange {
-    let begin: Int
-    let end: Int
+    let lowerEndpoint: Int
+    let upperEndpoint: Int
 
-    init(begin b_int: Int, end e_int: Int) throws {
-        if b_int > e_int {
+    let array: Array<Int>
+
+    init(lowerEndpoint l_int: Int, upperEndpoint u_int: Int) throws {
+        if l_int > u_int {
             throw CloseRangeError.ArgumentError
         }
 
-        self.begin = b_int
-        self.end = e_int
+        self.lowerEndpoint = l_int
+        self.upperEndpoint = u_int
+
+        self.array = Array(l_int...u_int)
     }
 
     func getRange() -> Range<Int> {
-        return begin...end
+        return lowerEndpoint...upperEndpoint
     }
 }
 
 extension ClosedRange {
     func toString() -> String {
-        return "[\(begin),\(end)]"
+        return "[\(lowerEndpoint),\(upperEndpoint)]"
     }
 }
 
 extension ClosedRange {
     func equals(compared: ClosedRange) -> Bool {
-        return (begin == compared.begin) && (end == compared.end)
+        return (lowerEndpoint == compared.lowerEndpoint) && (upperEndpoint == compared.upperEndpoint)
     }
 }
 
 extension ClosedRange {
     func contains(compared: Int) -> Bool {
-        return (begin <= compared) && (compared <= end)
+        return (lowerEndpoint <= compared) && (compared <= upperEndpoint)
     }
 
     func contains(compared: ClosedRange) -> Bool {
-        return (begin <= compared.begin) && (end >= compared.end)
+        return (lowerEndpoint <= compared.lowerEndpoint) && (upperEndpoint >= compared.upperEndpoint)
     }
 }
