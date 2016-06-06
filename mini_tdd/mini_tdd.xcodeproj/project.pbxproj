@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72BA9E151D03EB3E006465CA /* mini_tdd2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA9E141D03EB3E006465CA /* mini_tdd2.swift */; };
+		72BA9E171D03EB5D006465CA /* mini_tdd2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA9E161D03EB5D006465CA /* mini_tdd2Tests.swift */; };
 		72FACC4D1D008205005BBC54 /* mini_tdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 72FACC4C1D008205005BBC54 /* mini_tdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72FACC541D008205005BBC54 /* mini_tdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FACC491D008204005BBC54 /* mini_tdd.framework */; };
 		72FACC591D008206005BBC54 /* mini_tddTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FACC581D008206005BBC54 /* mini_tddTests.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72BA9E141D03EB3E006465CA /* mini_tdd2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mini_tdd2.swift; sourceTree = "<group>"; };
+		72BA9E161D03EB5D006465CA /* mini_tdd2Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mini_tdd2Tests.swift; sourceTree = "<group>"; };
 		72FACC491D008204005BBC54 /* mini_tdd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mini_tdd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FACC4C1D008205005BBC54 /* mini_tdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mini_tdd.h; sourceTree = "<group>"; };
 		72FACC4E1D008205005BBC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				72FACC581D008206005BBC54 /* mini_tddTests.swift */,
 				72FACC5A1D008206005BBC54 /* Info.plist */,
 				72FACC641D008232005BBC54 /* mini_tdd.swift */,
+				72BA9E141D03EB3E006465CA /* mini_tdd2.swift */,
+				72BA9E161D03EB5D006465CA /* mini_tdd2Tests.swift */,
 			);
 			path = mini_tddTests;
 			sourceTree = "<group>";
@@ -206,7 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BA9E171D03EB5D006465CA /* mini_tdd2Tests.swift in Sources */,
 				72FACC591D008206005BBC54 /* mini_tddTests.swift in Sources */,
+				72BA9E151D03EB3E006465CA /* mini_tdd2.swift in Sources */,
 				72FACC651D008232005BBC54 /* mini_tdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +392,7 @@
 				72FACC5F1D008206005BBC54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72FACC601D008206005BBC54 /* Build configuration list for PBXNativeTarget "mini_tddTests" */ = {
 			isa = XCConfigurationList;
@@ -392,6 +401,7 @@
 				72FACC621D008206005BBC54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
